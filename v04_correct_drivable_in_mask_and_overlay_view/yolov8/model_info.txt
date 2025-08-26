@@ -1,0 +1,124 @@
+== Modelorecebido via whatsappna na data 2025/07/18 17:55 ==
+
+[INFO] Loading model: /home/jetson/pid_control/scripts/models/model_01/best.pt
+
+Basic model information:
+- Model type: <class 'ultralytics.models.yolo.model.YOLO'>
+- Number of classes: 8
+- Class names (model.names): {0: 'drivable', 1: 'lane', 2: 'passadeira', 3: 'stop sign', 4: 'speed 50', 5: 'speed 80', 6: 'jetracer', 7: 'gate'}
+
+Model structure (summary):
+YOLOv8s-seg summary: 151 layers, 11,793,192 parameters, 0 gradients, 42.7 GFLOPs
+
+Training arguments and hyperparameters available in the model:
+  [!] Could not access 'args' from the Ultralytics model.
+
+Direct inspection using PyTorch:
+Keys found in the PyTorch dictionary:
+['date', 'version', 'license', 'docs', 'epoch', 'best_fitness', 'model', 'ema', 'updates', 'optimizer', 'train_args', 'train_metrics', 'train_results']
+
+Training arguments ('train_args') found:
+  - task: segment
+  - mode: train
+  - model: ../models/objects_training/weights/best.pt
+  - data: /home/seame/ObjectDetectionAvoidance/yolo_models/seame_training/data.yaml
+  - epochs: 150
+  - time: None
+  - patience: 10
+  - batch: 16
+  - imgsz: 320
+  - save: True
+  - save_period: -1
+  - cache: False
+  - device: 0
+  - workers: 8
+  - project: ../models
+  - name: seame_training_50
+  - exist_ok: True
+  - pretrained: True
+  - optimizer: auto
+  - verbose: True
+  - seed: 0
+  - deterministic: True
+  - single_cls: False
+  - rect: False
+  - cos_lr: False
+  - close_mosaic: 10
+  - resume: False
+  - amp: True
+  - fraction: 1.0
+  - profile: False
+  - freeze: None
+  - multi_scale: False
+  - overlap_mask: True
+  - mask_ratio: 4
+  - dropout: 0.0
+  - val: True
+  - split: val
+  - save_json: False
+  - conf: None
+  - iou: 0.7
+  - max_det: 300
+  - half: False
+  - dnn: False
+  - plots: True
+  - source: None
+  - vid_stride: 1
+  - stream_buffer: False
+  - visualize: False
+  - augment: False
+  - agnostic_nms: False
+  - classes: None
+  - retina_masks: False
+  - embed: None
+  - show: False
+  - save_frames: False
+  - save_txt: False
+  - save_conf: False
+  - save_crop: False
+  - show_labels: True
+  - show_conf: True
+  - show_boxes: True
+  - line_width: None
+  - format: torchscript
+  - keras: False
+  - optimize: False
+  - int8: False
+  - dynamic: False
+  - simplify: True
+  - opset: None
+  - workspace: None
+  - nms: False
+  - lr0: 0.002
+  - lrf: 0.01
+  - momentum: 0.937
+  - weight_decay: 0.001
+  - warmup_epochs: 3
+  - warmup_momentum: 0.8
+  - warmup_bias_lr: 0.0
+  - box: 7.5
+  - cls: 0.5
+  - dfl: 1.5
+  - pose: 12.0
+  - kobj: 1.0
+  - nbs: 64
+  - hsv_h: 0.4
+  - hsv_s: 0.6
+  - hsv_v: 0.3
+  - degrees: 0.0
+  - translate: 0.3
+  - scale: 0.3
+  - shear: 0.0
+  - perspective: 0.0
+  - flipud: 0.0
+  - fliplr: 0
+  - bgr: 0.0
+  - mosaic: 0
+  - mixup: 0
+  - cutmix: 0.0
+  - copy_paste: 0
+  - copy_paste_mode: flip
+  - auto_augment: None
+  - erasing: 0.5
+  - cfg: None
+  - tracker: botsort.yaml

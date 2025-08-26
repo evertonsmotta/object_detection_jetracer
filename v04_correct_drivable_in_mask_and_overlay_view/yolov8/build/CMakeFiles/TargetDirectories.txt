@@ -1,0 +1,4 @@
+/home/jetson/Documents/e-codes/final/yolov8/build/CMakeFiles/rebuild_cache.dir
+/home/jetson/Documents/e-codes/final/yolov8/build/CMakeFiles/edit_cache.dir
+/home/jetson/Documents/e-codes/final/yolov8/build/CMakeFiles/yolov8_seg.dir
+/home/jetson/Documents/e-codes/final/yolov8/build/CMakeFiles/myplugins.dir

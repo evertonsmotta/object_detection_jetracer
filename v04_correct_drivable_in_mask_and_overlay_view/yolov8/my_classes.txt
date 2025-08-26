@@ -1,0 +1,8 @@
+drivable
+lane
+passadeira
+stop sign
+speed 50
+speed 80
+jetracer
+gate

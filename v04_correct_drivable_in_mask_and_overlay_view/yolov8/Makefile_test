@@ -1,0 +1,31 @@
+CXX = g++
+CXXFLAGS = -std=c++17 -Wall -Wextra -O2
+LIBS = -lmosquitto -lpthread
+
+TARGET = test_mqtt_connection
+SOURCE = test_mqtt_connection.cpp
+
+.PHONY: all clean
+
+all: $(TARGET)
+
+$(TARGET): $(SOURCE)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SOURCE) $(LIBS)
+
+clean:
+	rm -f $(TARGET)
+
+run: $(TARGET)
+	./$(TARGET)
+
+install_deps:
+	sudo apt-get update
+	sudo apt-get install -y libmosquitto-dev libmosquitto1
+
+help:
+	@echo "Comandos disponíveis:"
+	@echo "  make          - Compila o programa de teste"
+	@echo "  make clean    - Remove arquivos compilados"
+	@echo "  make run      - Compila e executa o teste"
+	@echo "  make install_deps - Instala dependências MQTT"
+	@echo "  make help     - Mostra esta ajuda" 
